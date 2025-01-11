@@ -1,5 +1,6 @@
 import 'package:final_project/auth/auth_gate.dart';
 import 'package:flutter/material.dart';
+import 'package:final_project/pages/weather_page.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 void main() async{
@@ -17,6 +18,7 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: AuthGate(),
     );
   }

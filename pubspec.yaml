@@ -9,6 +9,10 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  geocoding: ^3.0.0
+  geolocator: ^13.0.2
+  http: ^1.2.2
+  lottie: ^3.2.0
   supabase_flutter: ^2.8.3
 
 dev_dependencies:
@@ -18,3 +22,4 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+
