@@ -10,9 +10,9 @@ unauthenticated -> Login Page
 
 import 'package:flutter/material.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
-
 import '../pages/login_page.dart';
 import '../pages/profile_page.dart';
+import '../pages/weather_page.dart';
 
 class AuthGate extends StatelessWidget {
   const AuthGate({super.key});
@@ -36,7 +36,7 @@ class AuthGate extends StatelessWidget {
         final session = snapshot.hasData ? snapshot.data!.session : null;
 
         if (session != null){
-          return const ProfilePage();
+          return const WeatherPage();
         } else {
           return const LoginPage();
         }
